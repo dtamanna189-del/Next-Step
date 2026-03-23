@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login - NEXT-STEP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container navbar">
+        <div class="logo">NEXT-STEP</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="btn">Get Started</a>
+        </div>
+    </div>
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Login</h2>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+
+            <button class="btn btn-full" onclick="loginUser()">Login</button>
+
+            <div class="auth-footer">
+                Don’t have an account? <a href="register.html">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/auth.js"></script>
+
+</body>
+
+</html>
